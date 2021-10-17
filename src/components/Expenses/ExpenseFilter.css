@@ -1,0 +1,16 @@
+.expeenses-filter{
+    padding: 10px 8px;
+}
+
+.expeenses-filter__control {
+    display: flex;
+    justify-content:space-between ;
+    justify-items: end;
+    font-size: 2rem;
+
+}
+
+.expeenses-filter__control select{
+    padding: 10px 30px;
+    font-size: 1rem;
+}
