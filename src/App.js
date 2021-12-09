@@ -34,8 +34,7 @@ const App= () => {
 
 
   const AddExpenseHandler = expense =>{
-    console.log('from appjs');
-    console.log(expense);
+
     setExpenses((preExpensese)=>{
       return [
         expense,

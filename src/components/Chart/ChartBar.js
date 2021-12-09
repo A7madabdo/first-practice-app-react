@@ -4,19 +4,17 @@ import "./ChartBar.css";
 
 
 const ChartBar = props => {
-    let barFillHight = "0%";
-
-    if (props.maxValue > 0)
-        barFillHight = Math.round(props.value / props.maxValue * 100) + "%";
-   
+    let barFillHeight = '0px ';
+    if (props.maxValue > 0){
+        barFillHeight = Math.round( (props.value / props.maxValue) * 100) + 'px';
+    }
+ console.log(props.lable + " -"+barFillHeight);
     return (
         <div className="chart-bar">
-            <div className="char-bar__enner">
-                <div className="chart-bar__fill" style = {{height:barFillHight}}>
-
-                </div>
-                <div className="chart-bar__lable">{props.lable}</div>
+            <div className="chart-bar__inner">
+                <div className="chart-bar__fill" style= {{height:barFillHeight}}></div>
             </div>
+            <div className="chart-bar__label">{props.lable}</div>
         </div>
     )
 }
